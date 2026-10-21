@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Sekolah | Nama Sekolah Anda</title>
+    <style>
+        /* CSS UNTUK TAMPILAN */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+
+        /* Header & Navigasi */
+        header { background: #004a99; color: white; padding: 20px; text-align: center; border-bottom: 5px solid #ffcc00; }
+        
+        nav { background: #222; position: sticky; top: 0; z-index: 1000; text-align: center; }
+        nav a { color: white; padding: 15px 20px; display: inline-block; text-decoration: none; font-weight: bold; font-size: 14px; }
+        nav a:hover { background: #444; color: #ffcc00; }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050853063-915894bd98ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center;
+            height: 400px; color: white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 20px;
+        }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        
+        /* Konten Utama */
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        
+        .main-content { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .sidebar { background: #eee; padding: 20px; border-radius: 8px; }
+
+        h3 { color: #004a99; margin-bottom: 15px; border-left: 5px solid #ffcc00; padding-left: 10px; }
+
+        /* Berita & Pengumuman */
+        .news-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
+        .news-item h4 { color: #333; margin-bottom: 5px; }
+
+        /* Footer */
+        footer { background: #222; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SMA NEGERI INDONESIA</h1>
+        <p>Membentuk Generasi Cerdas, Berakhlak Mulia, dan Berdaya Saing Global</p>
+    </header>
+
+    <nav>
+        <a href="#">BERANDA</a>
+        <a href="#">PROFIL</a>
+        <a href="#">AKADEMIK</a>
+        <a href="#">KESISWAAN</a>
+        <a href="#">FASILITAS</a>
+        <a href="#">PPDB</a>
+        <a href="#">KONTAK</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Selamat Datang di Portal Resmi</h2>
+        <p>Wadah Informasi dan Kreativitas Seluruh Civitas Akademika</p>
+    </section>
+
+    <div class="container">
+        <main class="main-content">
+            <h3>Sambutan Kepala Sekolah</h3>
+            <p>Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa atas terbitnya website resmi sekolah ini. Kami berharap website ini menjadi jembatan informasi bagi siswa, orang tua, maupun masyarakat luas untuk mengenal lebih dekat sekolah kami...</p>
+            <br>
+            <h3>Berita Terbaru</h3>
+            <div class="news-item">
+                <h4>Penerimaan Peserta Didik Baru (PPDB) 2026/2027</h4>
+                <p><small>Diposting pada: 12 Januari 2026</small></p>
+                <p>Informasi jadwal dan persyaratan pendaftaran siswa baru tahun ajaran 2026/2027 telah dibuka...</p>
+            </div>
+            <div class="news-item">
+                <h4>Juara 1 Lomba Sains Tingkat Nasional</h4>
+                <p><small>Diposting pada: 5 Januari 2026</small></p>
+                <p>Siswa kami berhasil meraih medali emas dalam ajang Olimpiade Sains Nasional tahun ini...</p>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Pengumuman</h3>
+            <ul>
+                <li>Rapat Wali Murid Kelas XII</li>
+                <li>Libur Semester Ganjil</li>
+                <li>Jadwal Ujian Akhir Sekolah</li>
+            </ul>
+            <br>
+            <h3>Link Cepat</h3>
+            <p>» E-Learning</p>
+            <p>» Perpustakaan Digital</p>
+            <p>» Cek Nilai Siswa</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p><strong>SMA NEGERI INDONESIA</strong></p>
+        <p>Jl. Pendidikan No. 123, Kota Pendidikan, Indonesia</p>
+        <p>Email: info@sekolahkita.sch.id | Telp: (021) 1234567</p>
+        <hr style="margin: 15px 0; border: 0.5px solid #444;">
+        <p>&copy; 2026 Website Sekolah. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
